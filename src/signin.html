@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <title>Sign In</title>
+    </head>
+
+    <body class="mx-auto">
+        <!-- General container -->
+        <div class="w-[23.4rem] h-[40.375rem] ml-[2rem] laptop:w-[94.5rem] laptop:min-h-[61.375rem] laptop:flex laptop:justify-between laptop:items-center laptop:mt-[8rem] laptop:shadow-md laptop:mx-auto">
+            <!-- start of the hero image -->
+            <div class="w-[23.4375rem] min-h-[50rem] hidden laptop:block laptop:w-[39.25rem] laptop:min-h-[61.375rem]">
+                <div class="laptop:w-[39.25rem] text-center">
+                    <!-- Logo -->
+                    <div class="laptop:">
+                       <a href="index.html"> <img src="./images/sign up logo.png" alt="" class="mx-auto laptop:w-[5rem] laptop:h-14"></a>
+                    </div>
+
+                    <p class="laptop:w-[9.9rem] laptop:min-h-[1.375rem] laptop:text-center laptop:mx-auto laptop:font-poppins laptop:font-normal laptop:text-[1.977rem] laptop:leading-[1.359rem] laptop:text-primaryColor laptop:mt-[2rem]">Healthical</p>
+                </div>
+
+                <!-- Hero image -->
+                <div class="laptop:w-[43.1875rem] laptop:min-h-[35.125rem] laptop:mt-[2rem]">
+                    <img src="./images/doctors.png" alt="" class="laptop:w-[43.1875rem] laptop:h-auto">
+                </div>
+            </div>
+            <!-- End of the hero -->
+
+
+            <!-- Start of the form -->  <!-- For Mobile screen device -->
+            <main  class="w-[23.4rem] min-h-[6.25rem] laptop:w-[55.25rem] laptop:min-h-[61.375rem] ">
+                <div class="">
+                    <!-- Logo for mobile screen -->
+                    <div class="w-[15rem] laptop:hidden">
+                        <img src="./images/sign up logo.png" alt="" class="w-[2rem] mt-[2rem]">
+                    </div>
+
+                    <!-- Mobile buttons and text -->
+                    <div class="w-[23.4rem] min-h-[5.25rem]  laptop:w-[55.25rem] laptop:mt-[-3rem]">
+                        <div class="w-full min-h-[5.25rem] flex justify-start items-center flex-col laptop:flex laptop:items-center">
+                            <p class="w-[5rem] min-h-[2rem] font-poppins font-normal leading-8 text-primaryColor text-base mt-[2rem] mr-[1rem] laptop:w-[5rem] laptop:min-h-[2rem] laptop:text-base laptop:leading-8 ">Sign in</p>
+
+                            <!-- Button1 -->  
+                            <div class="w-[18.5rem]  min-h-[5rem] text-center mt-[2rem] mr-[4rem] laptop:w-[33.625rem] laptop:min-h-[4.788rem] laptop:flex laptop:justify-center">
+                                <span class="w-[8rem] min-h-[4rem] relative left-[2rem] laptop:w-[33.625rem] laptop:min-h-[4.788rem]">
+                                    <button type="button" class="btn-1 w-[8rem] rounded-full px-2 py-1 z-auto bg-gray-200 hover:bg-primaryColor  focus:bg-primaryColor focus:bg-gray-200 transition-all ease-out duration-1000 shadow-lg laptop:w-[16.31rem] laptop:min-h-[4rem]">
+                                    <span class="text-sm font-poppins font-light leading-6 text-white">Patient</span>
+                                    </button>
+                                </span>
+
+                                <!-- Button 2 -->
+                                <span class="w-[8rem] min-h-[4rem] laptop:w-[33.625rem] laptop:min-h-[4.788rem]">
+                                    <button type="button" class="btn-2 w-[10rem] rounded-full px-2 py-1 text-white  z-auto bg-gray-200 focus:bg-primaryColor  hover:bg-primaryColor transition-all ease-out duration-1000 shadow-md laptop:w-[16.3rem] laptop:min-h-[4rem]  laptop:relative laptop:right-[2rem] laptop:z-50">
+                                        <span class="text-sm font-poppins font-light leading-6 ml-[1rem]">Hospital</span>
+                                    </button>
+                                </span>
+
+                               
+                            </div>
+                                <!--DISPLAY SUCCESS MESSAGE -->
+                            <div class="mb-4 w-[7rem] laptop:mt-6">
+                                <p class="text-green-600 font-poppins laptop:text-base laptop:whitespace-nowrap font-medium mb-8 text-xs show-success-message"></p><!-- DISPLAY SUCCESS MESSAGE -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <form id="signin-form" action="" method="post" class="form-valid w-[23.4rem] min-h-[20rem] laptop: laptop:w-[55.25rem] laptop:mt-[-2rem]">
+                   <div class="flex flex-col w-[21rem] laptop:w-[55.25rem] relative">
+                      <input type="text" name="" id="email" placeholder="Email Address" class="w-[21rem] p-3 border min-h-[2rem] outline-none border-primaryContainer rounded-md mb-[1.4rem] placeholder:w-[10rem] placeholder:font-light placeholder:pl-[0.5rem] placeholder:text-sm placeholder:font-poppins py-2 laptop:w-[50rem] laptop:min-h-[3rem]laptop:rounded">
+                      <ion-icon name="alert-circle" class="absolute right-2 top-[1rem] laptop:right-[7rem] text-red-600 opacity-0  show-error-icon" ></ion-icon><!--Error Icon-->
+                      <ion-icon name="checkmark-circle"  class="absolute right-2 top-[1rem]  laptop:right-[7rem] text-green-600 opacity-0 show-success-icon"></ion-icon><!--Success Icon-->
+                      <p class="mt-[-1.1rem] ml-1 text-sm show-error-message text-red-600 font-poppins font-medium"></p><!--Error message-->
+                      
+                      <input type="password" name="password" placeholder="password" id="password" class="w-[21rem] min-h-[2rem] mt-5 border p-3 outline-none border-primaryContainer rounded-md placeholder:w-[10rem] placeholder:font-light placeholder:pl-[0.5rem] placeholder:text-sm placeholder:font-poppins py-2  laptop:w-[50rem] laptop:min-h-[3rem]laptop:rounded">
+                      <ion-icon name="alert-circle" class="absolute right-2 laptop:right-[7rem] text-red-600 top-[6.4rem] laptop:relative laptop:left-[47rem] laptop:top-[-1.6rem]  opacity-0 show-error-icon"></ion-icon><!--Error Icon-->
+                      <ion-icon name="checkmark-circle" class="absolute right-2 top-[6.4rem] laptop:relative laptop:left-[47rem] laptop:top-[-2.6rem] laptop:right-[7rem] text-green-600  opacity-0 show-success-icon" id="display-success-icon"></ion-icon><!-- Success Icon -->
+                      <p class="mt-1 ml-1 text-sm  show-error-message text-red-600 font-poppins font-medium laptop:mt-[-1.8rem]"></p><!--Error message-->
+                   </div>
+
+                    <!--Remember me & forgot password part-->
+                    <div class="flex justify-between mt-4 laptop:w-[55rem] laptop:min-h-[1.5rem] laptop:mt-5">
+                       <span class="flex gap-2 items-center">
+                           <input type="checkbox" name="" id="" class="outline-gray-600  border-gray-400 accent-slate-400">
+                           <p class="font-poppins text-xs laptop:w-[7.5rem] laptop:min-h-[1.5rem] text-contactColor laptop:text-base laptop:text-contactColor">Remember me</p>
+                       </span>
+
+                        <span>
+                          <a href=""> <button type="button" class="font-poppins text-xs mr-[2.4rem] text-contactColor laptop:w-[8.9375rem]  laptop:text-base laptop:font-poppins laptop:leading-6 laptop:text-contactColor laptop:mr-[5rem]">Forgot password?</button></a>
+                        </span>
+                    </div>
+                     
+                    <!-- Bottom button -->
+                    <div class="mt-[2rem] w-[21]">
+                        <button type="submit" class="border w-[21rem] py-[0.3rem] rounded-lg bg-primaryColor transition-all ease-out duration-1000 laptop:w-[12.5rem] laptop:min-h-[3rem]"><span class="text-white text-sm laptop:font-poppins laptop:text-base ">Log in</span></button>
+                    </div>
+                </form>
+                <!-- End of form -->
+          
+                <!-- Sign up option -->
+                <span class="w-[23.4rem] mt-[-2rem] flex justify-center items-center text-center gap-2 laptop:w-[16.25rem] laptop:min-h-[1.5rem] laptop:mt-[0.3rem]">
+                    <p class="font-poppins font-light text-sm leading-6 laptop:font-normal laptop:leading-6 laptop:text-base">Don’t have an account ?</p>
+                   <a href="patientsignup.html" target="_blank">
+                      <button type="submit" class="text-sm text-primaryColor font-medium relative bottom-[0.2rem] laptop:font-normal laptop:leading-6 laptop:text-base"><span>Sign up</span></button>
+                   </a>
+                </span>
+            </main> 
+        </div>
+        <!-- End -->
+        <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="./sigin.js"></script>
+    </body>
+
+</html>;

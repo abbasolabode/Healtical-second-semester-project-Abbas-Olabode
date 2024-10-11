@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="./output.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <title>Contact Form</title>
+    </head>
+
+    <body class="">
+        <!--Chat Overly-->
+        <main
+            class="chat-modal  w-[23.4rem] min-h-[36.375rem] shadow-2xl backdrop-opacity-60 rounded z-50 backdrop-blur-md laptop:w-[35.6875rem] laptop:min-h-[48.5rem] laptop:mx-auto laptop:z-50 laptop:bg-white ">
+            <!-- Heading message -->
+            <section class="w-[20rem] flex justify-between mt-[3rem] ml-[1rem] laptop:ml-[8rem]">
+                <div class="w-full min-h-[1.5rem]">
+                    <p
+                        class=" text-center  text-base font-light font-poppins leading-6 text-primaryColor ml-[2rem] laptop:w-[9.9rem] laptop:min-h-[1.5rem] laptop:font-normal laptop:text-[1rem] laptop:leading-6">
+                        Send us a message</p>
+                </div>
+        
+                <!-- Close Button -->
+                <span class="close-chat-btn ml-[2.5rem] hidden">
+                    <ion-icon name="close-outline"
+                        class="w-[1.5rem] min-h-[1.5rem] laptop:w-[1.5rem] laptop:min-h-[1.5rem] laptop:text-gray-400 laptop:ml-[10rem]"></ion-icon>
+                </span>
+            </section>
+        
+        
+            <!-- Input field -->
+            <form action="#" method="post" class="w-[20rem] h-auto mt-[2rem] laptop:ml-[2.5625rem]">
+                <!-- First Container -->
+                <section
+                    class="w-full flex flex-col gap-[0.5rem] p-[0.625rem] ml-[1rem] laptop:w-[26.6rem] laptop:min-h-[5.6rem] laptop:p-[0.625rem] laptop:gap-2">
+                    <!-- Text -->
+                    <label for="name"
+                        class="w-[2.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor hidden laptop:block laptop:w-[2.4rem] laptop:min-h-[1.1rem] laptop:font-poppins laptop:font-normal laptp:text-[0.78rem] laptop:tracking-[0.009375rem]">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name"
+                        class="w-full h-[3rem] rounded-lg border border-secondaryColor focus:outline-none placeholder-slate-400 placeholder:pl-4 text-sm  laptop:placeholder:w-[5.8rem] laptop:placeholder:min-h-[0.9375rem] laptop:placeholder:font-poppins laptop:placeholder:text-[0.630625rem] laptop:placeholder:leading-[0.9rem] ">
+                </section>
+        
+                <!-- Second Container -->
+                <section
+                    class="w-full flex flex-col gap-[0.5rem] p-[0.625rem] ml-[1rem] mt-[1rem] laptop:w-[26.6875rem] laptop:min-h-[5.5rem] laptop:p-[0.625rem] laptop:gap-2">
+                    <label for=" Email"
+                        class="w-[3.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor hidden">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Enter a valid e-mail"
+                        class="w-full h-[3rem] rounded-lg border border-secondaryColor focus:outline-none placeholder-slate-400 placeholder:pl-4  text-sm   laptop:placeholder:w-[6.8rem] laptop:placeholder:min-h-[0.9375rem] laptop:placeholder:font-poppins laptop:placeholder:text-[0.630625rem] laptop:placeholder:leading-[0.9rem]">
+                </section>
+        
+                <!-- Textarea -->
+                <section class="flex flex-col">
+                    <label for="message"
+                        class="w-[2.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor ml-[2rem] mt-[1rem]">Message</label>
+                    <textarea name="message" id="message" rows="8" cols="5"
+                        class="w-full border border-primaryColor shadow-lg mx-auto outline-none rounded-md mt-2 ml-[1.8rem] laptop:w-[25.7rem] laptop:min-h-[18rem] laptop:rounded-lg"></textarea>
+                </section>
+                <!-- Button -->
+                <div>
+                    <button type="submit"
+                        class="cursor-pointer w-full text-center gap-5 mt-7 ml-[2rem] border py-3 bg-primaryColor rounded-2xl transition-all ease-out translate-y-0.5 hover:bg-secondaryColor duration-1000 laptop:w-[25.7rem] laptop:min-h-[2.27rem] laptop:pt-[0.75rem] laptop:pr-[1rem] laptop:pb-[0.75rem] laptop:pl-[1rem] laptop:gap-[0.625rem]"><span
+                            class=" text-white text-sm hover:text-white font-poppins laptop:w-[1.93rem] laptop:min-h-[1rem] laptop:font-poppins laptop:font-medium laptop:leading-none">Send</span></button>
+                </div>
+            </form>
+        </main>
+        <!-- End of chat overlay-->
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>

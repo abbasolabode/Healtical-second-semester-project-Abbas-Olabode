@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-auto">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>About Us</title>
+    </head>
+
+    <body class="overflow-x-auto">
+        <!-- Header Container-->
+        <header class="w-[26.75rem] min-[5.625rem] laptop:w-[94.5rem] laptop:h-[6.68rem] z-50">
+            <section
+                class="flex fixed w-[26.75rem] bg-white z-50 py-3 top-0 justify-between items-start laptop:flex  laptop:w-[94.5rem]  laptop:h-[7.68rem] laptop:pb-10"> <!-- 6.68rem initial value-->
+                <!-- Logo  & hamburger menu-->
+                <div class="flex justify-between items-center w-full min-h-full gap-10 laptop:flex  laptop:items-center">
+                    <div
+                        class="w-[8.5rem] min-h-[1.88rem] laptop:w-[10rem] laptop:h-[2rem] laptop:mt-[2.25rem] laptop:ml-[7.5rem]">
+                        <a href="index.html"><img src="./images/Logo.png" alt="Logo"
+                                class="w-[8.5rem] ml-4 laptop:w-[10rem] min-h-[1.88rem] laptop:h-[2.5rem] laptop:mt-[1.875rem]" /></a>
+                    </div>
+
+                    <!-- Hamburger -->
+                    <span class="mr-[2rem]  px-1 shadow-sm overflow-hidden laptop:hidden border" id="hamburger">
+                        <ion-icon name="menu-outline" class="text-4xl  cursor-pointer laptop:hidden"></ion-icon>
+                    </span>
+                </div>
+
+                <!-- Navigation Container -->
+                <section
+                    class="flex-col justify-center items-center fixed opacity-75 transition-all duration-1000 h-full bg-white w-full hidden laptop:flex laptop:flex-row laptop:bg-inherit laptop:h-0 "
+                    id="menu">
+                    <nav
+                        class="flex flex-row-reverse justify-center w-full mr-[3rem]laptop:w-[28.375rem] laptop:h-[3rem] laptop:mt-[1.56rem]">
+                        <!-- Close button -->
+                        <div class="relative right-[19rem] laptop:hidden">
+                            <ion-icon class="font-bold text-4xl mr-[4rem] self-start mt-3 cursor-pointer"
+                                name="close-outline" id="close-btn"></ion-icon>
+                        </div>
+
+                        <ul
+                            class="h-full flex flex-col items-center w-full ml-[7rem] mt-[4rem] laptop:flex laptop:flex-row laptop:justify-center laptop:items-center laptop:ml-[20rem]">
+                            <li class="mt-[2rem] laptop:w-[7.25rem] laptop:h-[2.75rem]">
+                                <a class="text-base leading-6 hover:underline text-primaryColor font-poppins font-normal laptop:w-[3rem] laptop:h-[1.5rem] laptop:text-base laptop:leading-6 laptop:font-medium laptop:hover:underline laptop:mr-[3rem]"
+                                    href="index.html" target="_blank">Home</a>
+                            </li>
+                            <li class="mt-[2rem] laptop:w-[7.4rem] laptop:h-[2.75rem]">
+                                <a class="text-base leading-6 hover:underline text-primaryColor font-poppins font-normal laptop:w-[4.1rem] laptop:h-[2.75rem] laptop:gap-[0.6rem] laptop:p-[0.6rem] laptop:font-normal"
+                                    href="service.html" target="_blank">Services</a>
+                            </li>
+                            <li
+                                class="mt-[2rem] laptop:w-[7.75rem] laptop:h-[2.75rem] laptop:mt-[1rem] laptop:gap-[0.6rem] laptop:p-[0.6rem]">
+                                <a class="text-base text-primaryColor hover:underline leading-6 py-4 font-poppins font-normal laptop:w-[4.5rem] laptop:h-[1.5rem] laptop:font-poppins laptop:font-normal laptop:text-base laptop:leading-6"
+                                    href="about.html" target="_blank">About Us</a>
+                            </li>
+                            <li
+                                class="mt-[1.5rem] laptop:w-[8.8rem] laptop:h-[2.75rem] laptop:p-[0.6rem] laptop:gap-[0.6rem] laptop:mt-[1rem]">
+                                <a class="text-base text-primaryColor hover:underline font-poppins font-normal laptop:w-[5.5rem] laptop:h-[1.5rem] laptop:leading-6 laptop:font-poppins laptop:font-medium"
+                                    href="contact.html" target="_blank">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Buttons -->
+                    <div
+                        class="mt-[7rem] ml-[2rem] flex justify-center items-center mr-[3rem] laptop:flex laptop:items-center laptop:mt-[8.5rem] laptop:mr-[7.5rem]">
+                        <span>
+                            <a href="signin.html">
+                                <button type="button"
+                                    class="poppins w-[5rem] py-[0.3rem] border border-blue-500 rounded-md text-xs hover:bg-primaryContainer transition-all duration-150 shadow-2xl cursor-pointer laptop:mr-[-1rem] laptop:w-[8rem] laptop:h-[2.75rem] laptop:mt-[1.5rem] laptop:pt-[0.6rem] laptop:pr-[2rem] laptop:pb-[0.6rem] laptop:pl-[2rem]">
+                                    <span
+                                        class="text-primaryColor font-poppins laptop:w-[3.8rem] laptop:h-[1.25rem] laptop:font-medium laptop:text-base laptop:leading-6">sign
+                                        in</span>
+                                </button></a>
+                        </span>
+
+                        <span class="">
+                            <a href="patientsignup.html" target="_blank">
+                                <button type="button"
+                                    class="poppins w-[5rem] py-[0.3rem] border shadow-xl translate-y-0.5 transition-all duration-150 bg-primaryColor text-white border-blue-500 rounded-md text-xs hover:bg-primaryContainer hover:text-white cursor-pointer ml-[2rem] laptop:w-[8rem] laptop:h-[2.75rem] laptop:pt-[0.6rem] laptop:pr-[2rem] laptop:pb-[0.6rem] laptop:pl-[2rem] laptop:mt-[1.5rem]">
+                                    <span
+                                        class="font-poppins laptop:w-[5rem] laptop:h-[1.5rem] laptop:text-base laptop:font-medium laptop:leading-6">Sign
+                                        Up</span>
+                                </button></a>
+                        </span>
+                    </div>
+                </section>
+            </section>
+        </header>
+        <!-- End of the header -->
+
+        <!-- Start of  hero section-->
+        <main class="w-[26.75rem] min-h-[25.5rem] mt-[5.625rem] relative laptop:w-[94.5rem] laptop:min-h-[30.5rem]">
+            <!-- Hero & text container -->
+            <div class="w-[26.75rem] min-h-[25.5rem] laptop:w-[94.5rem] laptop:min-h-[30.5rem]">
+                <img src="./images/about-hero-laptop-latest.png" alt="laptop image"
+                    class="hidden laptop:block w-full min-h-full" />
+                <img src="./images/about-hero-mobile.png" alt=""
+                    class="laptop:hidden w-[26.75rem] min-h-[25.5rem] object-cover opacity-85" />
+
+
+                <!--Flex Hero buttons & header text container -->
+                <div
+                    class="absolute top-[10.7rem] right-[3.5rem] w-[24.6875rem] h-[2.76rem] ml-[1rem] laptop:w-[35.4375rem] min-h-[30.9375rem] laptop:right-[33rem] laptop:top-[14rem]">
+                    <div class="w-[24.6875rem] h-[2.76rem] ml-[1rem]">
+
+                        <!-- Container hero buttons -->
+                        <div
+                            class="w-[6.8125rem] min-h-[1.0625rem] ml-[9.988rem] whitespace-nowrap laptop:w-[9.75rem] laptop:min-h-6 ">
+                            <a href="index.html" target="_blank">
+                            <button type="button"
+                                class="font-poppins font-medium text-[0.768125] leading-[1.02rem] text-white ml-2 laptop:w-[9.75rem] laptop:min-h-6 laptop:font-poppins laptop:font-medium laptop:text-[1.1025rem] laptop:leading-[1.47rem] laptop:ml-10">Home<span
+                                    class="font-poppins font-medium ml-2 text-[0.768rem] leading-[1.02rem] whitespace-nowrap text-gray-500 laptop:font-bold laptop:ml-3">></span></button>
+                            </a>
+
+                            <a href="about.html">
+                                <button type="button"
+                                    class="font-poppins font-normal text-[0.768rem] leading-[1.02rem] whitespace-nowrap "><span
+                                        class="text-gray-500 laptop:font-light laptop:mr-10">ABOUT US</span></button>
+                            </a>
+                        </div>
+
+                        <h1
+                            class="w-[24.6rem] whitespace-nowrap ml-7 flex items-center text-[1.741875rem] font-poppins font-medium text-white laptop:w-[35.4375rem] laptop:min-h-6 laptop:font-poppins laptop:text-[2.5rem] laptop:leading-[1.47rem] laptop:font-medium">
+                            Know More About Healthical</h1>
+                    </div>
+                </div>
+
+                <!-- Overlay chat button-->
+                <div
+                    class="w-[2.6875rem] min-h-[2.6875rem] rounded-full  relative bg-white  bottom-14 left-[23rem] laptop:left-[89rem]">
+                    <button type="button" class="chat-modal-btn">
+                        <img src="./images/overlay chat.png" alt="overlay chat icon"
+                            class="w-[1.95875rem] min-h-[1.95875rem] rounded-full bg-white relative top-2 left-2 right-2" />
+                    </button>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <!--Chat Overly (send us a message)-->
+        <main
+            class="chat-modal hidden w-[26.75rem] min-h-[36.375rem] shadow-2xl backdrop-opacity-60 rounded z-50 backdrop-blur-md laptop:w-[35.6875rem] laptop:min-h-[52.5rem] laptop:fixed laptop:top-[10rem] laptop:right-[4.2rem] laptop:mx-auto laptop:z-50 laptop:bg-white laptop:"
+            id="general-container-form">
+            <!-- Heading message -->
+            <section class="w-[25rem] flex justify-between items-center mt-[3rem]  laptop:ml-[8rem] pt-8 ">
+                <div class="w-full min-h-[1.5rem] ml-[4rem]">
+                    <p
+                        class=" text-center w-[7.75rem] whitespace-nowrap text-base font-light font-poppins leading-6 text-primaryColor ml-[2rem] laptop:w-[9.9rem] laptop:min-h-[1.5rem] laptop:font-normal laptop:text-[1rem] laptop:leading-6">
+                        Send us a message
+                    </p>
+                </div>
+
+                <!-- Close Button -->
+                <span class="close-chat-btn">
+                    <ion-icon name="close-outline"
+                        class=" w-[1.16rem] z-50 min-h-[1.16rem] laptop:w-[1.5rem] laptop:min-h-[1.5rem] laptop:text-gray-400 laptop:ml-[2rem] cursor-pointer"></ion-icon>
+                </span>
+            </section>
+
+
+            <!-- Input field -->
+            <form action="#" method="post" class="w-[20rem] h-auto mt-[2rem] laptop:w-[] laptop:ml-[2.5625rem]" id="main-form">
+                <!-- First Container -->
+                <section
+                    class="w-[20.78rem] min-h-[4.42625rem] flex flex-col gap-[0.5rem] p-[0.625rem] ml-[1rem] laptop:w-[26.6rem] laptop:min-h-[5.6rem] laptop:p-[0.625rem] laptop:gap-2 ">
+                    <!-- Text -->
+                    <label for="name"
+                        class="w-[2.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor hidden laptop:block laptop:w-[2.4rem] laptop:min-h-[1.1rem] laptop:font-poppins laptop:font-normal laptp:text-[0.78rem] laptop:tracking-[0.009375rem]">Name</label>
+                    <input type="text" name="name" required id="name-input" placeholder="Enter your name"
+                        class="w-[20.78rem]  h-[3rem] rounded-lg border p-3  border-secondaryColor focus:outline-none placeholder-slate-400 placeholder:pl-4 text-sm  laptop:placeholder:w-[5.8rem] laptop:placeholder:min-h-[0.9375rem] laptop:placeholder:font-poppins laptop:placeholder:text-[0.630625rem] laptop:placeholder:leading-[0.9rem] laptop:w-[25.766875rem] laptop:min-h-[3rem]">
+                </section>
+
+                <!-- Second Container -->
+                <section
+                    class="w-[20.78rem] min-h-[4.42625rem] flex flex-col gap-[0.5rem] p-[0.625rem] ml-[1rem] mt-[1rem] laptop:w-[26.6875rem] laptop:min-h-[5.5rem] laptop:p-[0.625rem] laptop:gap-2">
+                    <label for=" Email"
+                        class="w-[3.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor hidden">E-mail</label>
+                    <input type="email" name="email" required id="email" placeholder="Enter a valid e-mail"
+                        class="w-[20.78rem]  h-[3rem] rounded-lg border p-3  border-secondaryColor focus:outline-none placeholder-slate-400 placeholder:pl-4  text-sm placeholder: laptop:placeholder:w-[6.8rem] laptop:placeholder:min-h-[0.9375rem] laptop:placeholder:font-poppins laptop:placeholder:text-[0.630625rem] laptop:placeholder:leading-[0.9rem] laptop:w-[25.766875rem] laptop:min-h-[3rem]">
+                </section>
+
+                <!-- Textarea -->
+                <section class="flex flex-col">
+                    <label for="message"
+                        class="w-[2.4rem] min-h-[1.18rem] font-poppins text-normal leading-[1.1rem] tracking-[0.0093rem] text-primaryColor ml-[2rem] mt-[1rem]">Message</label>
+                    <textarea name="message" id="message-input" rows="8" cols="5"
+                        class="w-[20.78rem] border border-contactColor p-3  shadow-xs mx-auto outline-none rounded-md mt-2 ml-[1.8rem] laptop:rounded-lg laptop:w-[25.766875rem] laptop:min-h-[18.375rem]"></textarea>
+                </section>
+                <!-- Button -->
+                <div class="w-[19.9rem]">
+                    <button id="submit-btn" type="submit"
+                        class="cursor-pointer w-[19.9rem] text-center gap-5 mt-7 ml-[2rem] border py-2 bg-primaryColor rounded-2xl transition-all ease-out translate-y-0.5 hover:bg-secondaryColor duration-1000 laptop:w-[25.7rem] laptop:min-h-[2.27rem] laptop:pt-[0.75rem] laptop:pr-[1rem] laptop:pb-[0.75rem] laptop:pl-[1rem] laptop:gap-[0.625rem]"><span
+                            class=" text-white text-sm hover:text-white font-poppins laptop:w-[1.93rem] laptop:min-h-[1rem] laptop:font-poppins laptop:font-medium laptop:leading-none">Send</span></button>
+                </div>
+            </form>
+        </main>
+        <!-- End of chat overlay-->
+
+
+        <!-- Vision and mission statements -->
+        <div
+            class="w-[26.75rem] laptop:w-[66.3125rem] laptop:min-h-[22.5rem] laptop:flex justify-between items-center laptop:ml-[14.125rem] laptop:border laptop:shadow-lg laptop:border-b-2 laptop:border-b-contactColor laptop:border-l laptop:border-l-primaryContainer laptop:border-r laptop:border-r-primaryContainer  laptop:mt-4">
+            <!-- OUR MISSION container -->
+            <div
+                class="w-[22.5625rem] min-h-[16.4375rem] ml-[2.125rem] laptop:w-[22.5625rem] laptop:min-h-[16.475rem] laptop:mt-[3rem]">
+                <h2
+                    class="w-[11.5rem] min-h-[3rem] mt-[1.75rem] ml-[5.5625rem] font-poppins font-normal text-[2rem] leading-[3rem] text-primaryColor laptop:w-[11.5rem] laptop:min-h-[3rem] laptop:mt-7 laptop:font-normal laptop:text-[2rem] laptop:leading-[3rem]">
+                    Our Mission</h2>
+
+                <p
+                    class="w-[20.5rem] min-h-[6rem] ml-[1.5625rem] font-light font-poppins text-base leading-6 tracking-[0.125rem] text-center text-primaryColor laptop:w-[20.5rem] laptop:min-h-[6rem] laptop:font-poppins laptop:font-light laptop:leading-6 laptop:tracking-[0.125rem] laptop:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla
+                </p>
+            </div>
+
+            <div class=" hidden laptop:block h-10 w-0 mt-7 border laptop:h-[10rem] laptop:bg-primaryContainer"></div>
+
+            <!-- OUR VISION container -->
+            <div
+                class="w-[22.5625rem] min-h-[16.4375rem] ml-[2.125rem] laptop:w-[22.5625rem] laptop:min-h-[16.4375rem] laptop:mt-[3rem]  laptop:mr-[4rem]">
+                <h2
+                    class="w-[10.125rem] min-h-[3rem] font-poppins font-normal ml-[6.25rem] text-[2rem] leading-[3rem] text-primaryColor laptop:w-[10.125rem] laptop:min-h-[3rem] laptop:mt-7 ">
+                    Our Vision</h2>
+
+                <p
+                    class="w-[20.5rem] min-h-[6rem] ml-[1.5625rem] font-light font-poppins text-base leading-6 tracking-[0.125rem] text-center text-primaryColor laptop:w-[20.5rem] laptop:min-h-[6rem]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla
+                </p>
+            </div>
+        </div>
+
+
+        <!--THE TEAM-->
+        <!--Flex container -->
+        <main class="w-[26.75rem] laptop:w-[92.125rem] laptop:min-h-[39.75rem] laptop:overflow-hidden">
+            <!-- Left container -->
+            <div class="w-[15.375rem] min-h-[3.125rem] ml-[5.6875rem] laptop:w-full ">
+                <h2
+                    class="w-[15.375rem] min-h-[3.125rem] text-center font-poppins font-normal text-[2rem] leading-[3rem] text-primaryColor laptop:text-center laptop:ml-[32.625rem] laptop:mt-6">
+                    Mee<span class="underline underline-offset-8 text-primaryColor rounded-[2.5625rem]">t The
+                        T</span>eam</h2>
+            </div>
+
+
+            <!-- Right container -->
+            <div
+                class="w-[26rem] min-h-[39.75rem] mt-[5rem] laptop:w-[81.5rem] laptop:min-h-[39.75rem] laptop:h-0  laptop:flex laptop:items-center laptop:justify-start  <!-- Will be removed  --> laptop:ml-[7.5rem]  ">
+                <!-- person 1 container -->
+                <div
+                    class="w-full min-h-full ml-[0.6875rem] shadow-sm transition-all ease-in-out duration-1000 hover:scale-105 laptop:w-[25.5rem] laptop:min-h-[39.75rem]">
+                    <!-- image 1 -->
+                    <div class="w-[20.8125rem] min-h-[22.9375rem] ml-[2.3125rem]">
+                        <img src="./images/card-image-1.png" alt="" class="w-full">
+                    </div>
+
+                    <div class="w-[25.5rem] min-h-[12.4375rem] laptop:w-[25.5rem] laptop:min-h-[12.4375rem]">
+                        <div
+                            class="w-[21.9375rem] min-h-[12.4375rem] gap-[0.00625rem] flex flex-col items-center ml-[1.75rem] border-r border-b border-l border-r-primaryContainer border-b-primaryContainer border-l-primaryContainer laptop:w-[21.9375rem] laptop:min-h-[12.625rem] laptop:mt-8 laptop:gap-1">
+                            <div class="w-[9.875rem] min-h-[2rem]">
+                                <h3 class="font-poppins font-normal text-2xl leading-8 text-primaryColor mt-9">Braide
+                                    Peace</h3>
+                                <p class="font-poppins font-light text-base leading-8 text-contactColor ml-3">Product
+                                    Designer</p>
+                            </div>
+
+                            <div class="w-[19.9375rem] min-h-[4.5rem] laptop:w-[21.975rem] laptop:min-h-[4.5rem]">
+                                <p
+                                    class=" text-[0.875rem] leading-6 tracking-[0.0125rem] text-center  text-contactColor laptop:min-h-full laptop:font-poppins laptop:font-light laptop:leading-6 laptop:text-sm ">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- person 2 container -->
+                <div
+                    class="w-[26rem] hidden  min-h-[39.75rem] ml-[0.6875rem]  shadow-sm transition-all ease-in-out duration-1000 hover:scale-105 mt-[3rem] laptop:block laptop:w-[25.5rem] laptop:min-h-[39.75rem] laptop:self-start laptop:mt-1">
+                    <!-- image 3-->
+                    <div class="w-[20.8125rem] min-h-[22.9375rem] ml-[2.3125rem]">
+                        <img src="./images/card-image-1.png" alt="" class="w-full">
+                    </div>
+
+                    <div class="w-[25.5rem] min-h-[12.4375rem] laptop:w-[25.5rem] laptop:min-h-[12.4375rem]">
+                        <div
+                            class="w-[21.9375rem] min-h-[12.4375rem] gap-[0.00625rem] flex flex-col items-center ml-[1.75rem] border-r border-b border-l border-r-primaryContainer border-b-primaryContainer border-l-primaryContainer laptop:w-[21.9375rem] laptop:min-h-[12.625rem] laptop:gap-1 laptop:mt-[2rem]">
+                            <div class="w-[10.875rem] min-h-[2rem]">
+                                <h3
+                                    class=" whitespace-nowrap w-full font-poppins font-normal text-2xl leading-8 text-primaryColor mt-9">
+                                    Taiwo Stephen</h3>
+                                <p class="font-poppins font-light text-base leading-8 text-contactColor ml-3">Product
+                                    Designer</p>
+                            </div>
+
+                            <div class="w-[19.9375rem] min-h-[4.5rem] laptop:w-[21.975rem] laptop:min-h-[4.5rem]">
+                                <p
+                                    class=" text-[0.875rem] leading-6 tracking-[0.0125rem] text-center  text-contactColor laptop:min-h-full laptop:font-poppins laptop:font-light laptop:leading-6 laptop:text-sm  ">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- person 3 container -->
+                <div
+                    class="w-[26rem] hidden  min-h-[39.75rem] ml-[0.6875rem]  shadow-sm transition-all ease-in-out duration-1000 hover:scale-105 laptop:block laptop:w-[25.5rem] laptop:min-h-[39.75rem]">
+                    <!-- image 3 -->
+                    <div class="w-[20.8125rem] min-h-[22.9375rem] ml-[2.3125rem]">
+                        <img src="./images/card-image-1.png" alt="" class="w-full">
+                    </div>
+
+                    <div class="w-[25.5rem] min-h-[12.4375rem] laptop:w-[25.5rem] laptop:min-h-[12.4375rem]">
+                        <div
+                            class="w-[21.9375rem] min-h-[12.4375rem] gap-[0.00625rem] flex flex-col items-center ml-[1.75rem] border-r border-b border-l border-r-primaryContainer border-b-primaryContainer border-l-primaryContainer laptop:w-[22.9375rem] laptop:min-h-[12.625rem] laptop:mt-[2rem] laptop:gap-1">
+                            <div class="w-[9.875rem] min-h-[2rem]">
+                                <h3
+                                    class="whitespace-nowrap font-poppins font-normal text-2xl leading-8 text-primaryColor mt-9">
+                                    Olopade Samuel</h3>
+                                <p class="font-poppins font-light text-base leading-8 text-contactColor ml-3">Product
+                                    Manager</p>
+                            </div>
+
+                            <div class="w-[19.9375rem] min-h-[4.5rem]  laptop:w-[21.9375rem] laptop:min-h-[4.5rem]">
+                                <p
+                                    class=" text-[0.875rem] leading-6 tracking-[0.0125rem] text-center  text-contactColor laptop:min-h-full laptop:font-poppins laptop:font-light laptop:leading-6 laptop:text-sm ">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- person 4 container -->
+                <div
+                    class=" w-[26rem] hidden min-h-[39.75rem] ml-[0.6875rem] shadow-sm transition-all ease-in-out duration-1000 hover:scale-105 laptop:[25.5rem] laptop:min-h-[39.75rem]">
+                    <!-- image 4 -->
+                    <div class="w-[20.8125rem] min-h-[22.9375rem] ml-[2.3125rem]">
+                        <img src="./images/card-image-1.png" alt="" class="w-full">
+                    </div>
+
+                    <div class="w-[25.5rem] min-h-[12.4375rem] laptop:w-[25.5rem] laptop:min-h-[12.4375rem]">
+                        <div
+                            class="w-[21.9375rem] min-h-[12.4375rem] gap-[0.00625rem] flex flex-col items-center ml-[1.75rem] border-r border-b border-l border-r-primaryContainer border-b-primaryContainer border-l-primaryContainer laptop:w-[22.9375rem] laptop:min-h-[12.625rem] laptop:mt-[2rem] laptop:gap-1">
+                            <div class="w-[9.875rem] min-h-[2rem]">
+                                <h3
+                                    class="whitespace-nowrap font-poppins font-normal text-2xl leading-8 text-primaryColor mt-9">
+                                    Michael Daniel</h3>
+                                <p class=" font-poppins font-light text-base leading-8  text-contactColor ml-3">Product
+                                    Designer</p>
+                            </div>
+
+                            <div class="w-[19.9375rem] min-h-[4.5rem] laptop:w-[21.975rem] laptop:min-h-[4.5rem]">
+                                <p
+                                    class=" text-[0.875rem] leading-6 tracking-[0.0125rem] text-center  text-contactColor laptop:min-h-full laptop:font-poppins laptop:font-light laptop:leading-6 laptop:text-sm">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <!-- End of team section -->
+
+        <!-- Laptop overlay button -->
+        <div class="hidden laptop:block laptop:w-[94.5rem] laptop:relative">
+            <button type="button"
+                class="chat-modal-btn laptop:z-50 laptop:bg-white laptop:shadow-xl laptop:rounded-full"><img
+                    src="./images/overlay chat.png" alt=""
+                class="laptop:text-right laptop:absolute laptop:left-[83rem] laptop:w-[2.5rem] laptop:bg-white laptop:shadow-xl laptop:rounded-full laptop:z-50"></button>
+        </div>
+
+
+        <!--Footer-->
+        <!-- General container -->
+        <footer
+            class="w-[26.75rem] min-h-[45.9375rem] bg-primaryColor laptop:w-[94.5rem] laptop:min-h-[23.9375rem] laptop:mt-14 laptop:overflow-hidden overflow-hidden">
+            <!--Inner container2 -->
+            <div class="w-[26.75rem]">
+                <!--Inner container3 -->
+                <div class="w-[26.75rem] laptop:">
+                    <!-- Inner container4 -->
+                    <div class="w-[26.75rem]  ml-[2rem] laptop:w-[94.5rem] laptop:min-h-[23.9375rem] laptop:ml-[10rem]">
+                        <div class="laptop:w-[57.6875rem] laptop:min-h-[9rem] laptop:flex laptop:justify-center laptop:gap-[5.6875rem]">
+                            <!-- Company info container -->
+                            <div
+                                class="w-[9.6875rem] min-h-[6.85rem] ml-[2rem] gap-[5.99rem] laptop:w-[9.25rem] laptop:min-h-[6.375rem]  laptop:gap-5">
+                                <h3
+                                    class="w-[7.8125rem] min-h-[1.625rem] font-poppins font-bold leading-[1.58rem] text-[1.053125rem] tracking-[0.006875rem] text-white pt-[4rem] laptop:w-[7.375rem] laptop:min-h-6 laptop:text-base laptop:font-poppins laptop:font-bold laptop:leading-6 laptop:tracking-[0.00625rem] laptop:text-primaryContainer laptop:mb-2">
+                                    Company Info</h3>
+                                <nav>
+                                    <ul
+                                        class="w-[4.375rem] min-h-[3.908125rem] gap-[0.658125rem] laptop:w-[4.125rem] laptop:min-h-[3.625rem] laptop:gap-[0.625rem] laptop:whitespace-nowrap ">
+                                        <a href=""
+                                            class="w-[4.375rem] min-h-[1.625rem] font-poppins font-bold  text-[0.921875rem] leading-[1.58rem] tracking-[0.01325rem] text-white laptop:w-[2.625rem] laptop:min-h-6 laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:font-bold laptop:text-primaryContainer laptop:mb-2 hover:underline underline-offset-4">
+                                            <li></li>About Us
+                                        </a>
+                                        <a href=""
+                                            class="w-[2.8125rem] min-h-[1.625rem] font-poppins font-bold text-[0.921875rem] leading-[1.58rem] tracking-[0.01325rem] text-white  laptop:w-[2.625rem] laptop:min-h-6 laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:font-bold laptop:text-primaryContainer laptop:mt-2 hover:underline underline-offset-4">
+                                            <li></li>Team
+                                        </a>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                            <!-- Legal container -->
+                            <div
+                                class="w-[10rem] min-h-[6.85rem] ml-[2rem] laptop:w-[9.5rem] laptop:min-h-[6.375rem]  laptop:gap-5 laptop:mt-16">
+                                <h3
+                                    class="text-[1.053125rem] font-poppins font-bold tracking-[0.006875rem] leading-[1.58rem] text-white laptop:w-[2.88125rem] laptop:min-h-6 laptop:text-base laptop:font-bold laptop:leading-6 laptop:tracking-[0.00625rem] laptop:text-primaryContainer laptop:mb-2">
+                                    Legal</h3>
+                                <nav>
+                                    <ul
+                                        class="w-[9.56rem] min-h-[3.9rem] laptop:w-[9rem] laptop:min-h-[3.625rem] laptop:gap-[0.625rem] laptop:whitespace-nowrap">
+                                        <a href=""
+                                            class="w-[2.9375rem] min-h-[1.625rem] font-poppins font-bold text-[0.921875rem] leading-[1.58rem] tracking-[0.01325rem] text-white laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.012] laptop:text-primaryContainer laptop:mb-2 hover:underline underline-offset-4">
+                                            <li></li>Policies
+                                        </a>
+                                        <a href=""
+                                            class="w-[95625rem] min-h-[1.625rem] font-poppins font-bold text-[0.921875rem] leading-[1.58rem] tracking-[0.01325rem] text-white laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.012] laptop:text-primaryContainer laptop:mb-2 hover:underline underline-offset-4">
+                                            <li>
+                                            </li>Terms & Conditions
+                                        </a>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+
+                            <!-- Resources container -->
+                            <div
+                                class="w-[10rem] min-h-[9.1rem] ml-[2rem] laptop:w-[9.5rem] laptop:min-h-[8.5rem] laptop:gap-5 laptop:mt-16">
+                                <h3
+                                    class="w-[5.6875rem] min-h-[1.625rem] font-poppins font-bold tracking-[0.006875rem] text-white laptop:w-[5.4375rem] laptop:min-h-6 laptop:font-poppins laptop:font-bold laptop:leading-6 laptop:tracking-[0.00625rem] laptop:text-base laptop:text-primaryContainer laptop:mb-2">
+                                    Resources</h3>
+                                <nav>
+                                    <ul
+                                        class="w-[9.56rem] min-h-[3.9rem] laptop:w-[7.5rem] laptop:min-h-[5.75rem] laptop:gap-[0.625rem]">
+                                        <a href=""
+                                            class="w-[7.9375rem] min-h-[1.625rem]font-poppins font-bold leading-[1.58rem] tracking-[0.01325rem] whitespace-nowrap text-white laptop:font-poppins laptop:font-bold laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer laptop:mb-2 hover:underline underline-offset-4">
+                                            <li></li>Vision & Mission
+                                        </a>
+                                        <a href="">
+                                            <li
+                                                class="w-[7.9375rem] min-h-[1.625rem]font-poppins font-bold leading-[1.58rem] tracking-[0.01325rem] whitespace-nowrap text-white laptop:font-poppins laptop:font-bold laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer laptop:mb-2 hover:underline underline-offset-4">
+                                                Watch a Demo</li>
+
+                                            <a
+                                                class="w-[7.9375rem] min-h-[1.625rem]font-poppins font-bold leading-[1.58rem] tracking-[0.01325rem] whitespace-nowrap text-white laptop:font-poppins laptop:font-bold laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer hover:underline underline-offset-4">
+                                                <li></li>Customers
+                                            </a>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+
+                            <!-- Get in touch container -->
+                            <div class="ml-[2rem] laptop:w-[12.375rem] laptop:min-h-[9rem] laptop:gap-5 laptop:mt-16">
+                                <div class="laptop:w-[12.375rem] laptop:min-h-[6.25rem] laptop:gap-[0.625rem]">
+                                    <h3
+                                        class="w-[6.8125rem] min-h-[1.625rem] font-poppins font-bold  leading-[1.58rem] tracking-[0.006875rem] whitespace-nowrap text-white mb-3 laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer">
+                                        Get In Touch</h3>
+                                    <div class="w-[11.6875rem] min-h-[1.625rem] gap-[0.626rem] mb-1 laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem]">
+                                        <span class="w-[1.58rem] min-h-[1.58rem] text-white"><ion-icon
+                                                name="call"></ion-icon></span>
+                                        <span
+                                            class="w-[9.5rem] min-h-[1.625rem] font-poppins font-bold  leading-[1.58rem] tracking-[0.01325rem] text-white laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer laptop:mb-4">(234)
+                                            xxxx-xxx-xxx</span>
+                                    </div>
+
+                                    <div class=" mb-1">
+                                        <span class="w-[1.58rem] min-h-[1.3168rem] text-white laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem]"><ion-icon
+                                                name="location"></ion-icon></span>
+                                        <span
+                                            class="w-[9.5rem] min-h-[1.625rem] font-poppins font-bold  leading-[1.58rem] tracking-[0.01325rem] text-white laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer laptop:mb-4">Lagos,
+                                            Nigeria</span>
+                                    </div>
+
+                                    <div class="laptop:flex">
+                                        <span class="w-[1.6875rem] min-h-[1.58rem] text-white"><ion-icon
+                                                name="mail"></ion-icon></span>
+                                        <span
+                                            class="w-[9.5rem] min-h-[1.625rem] font-poppins font-bold  leading-[1.58rem] tracking-[0.01325rem] text-white laptop:w-[11.1875rem] laptop:min-h-6 laptop:font-bold laptop:font-poppins laptop:text-sm laptop:leading-6 laptop:tracking-[0.0125rem] laptop:text-primaryContainer">hello@healthical.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Social Links -->
+                    <div class="mt-10 ml-5 laptop:w-[94.5rem] laptop:min-h-[4.625rem]">
+                        <div
+                            class="flex flex-col-reverse items-center justify-center laptop:flex-row laptop:justify-between laptop:w-[65.625rem] laptop:min-h-[4.625rem] ">
+                            <div>
+                                <p
+                                    class="w-[11rem] min-h-[1.5rem] font-poppins text-[0.875rem] leading-6 tracking-[0.0125rem] text-white mt-2 font-normal laptop:font-poppins laptop:font-bold laptop:text-[0.875rem] laptop:leading-6 laptop:tracking-[0.0125rem] laptop:whitespace-nowrap laptop:ml-[10rem]">
+                                    All Rights Reserved 2022</p>
+                            </div>
+
+                            <div
+                                class="w-[14.75rem] min-h-6 ml-[6rem] laptop:w-[14.75rem] laptop:min-h-6 laptop:ml-[45rem] laptop:whitespace-nowrap">
+                                <span class="w-[7rem] min-h-6 laptop:w-full ">
+                                    <ion-icon name="logo-facebook"
+                                        class="w-6 min-h-6 mr-5 text-white laptop:w-6 laptop:min-h-6 cursor-pointer"></ion-icon>
+                                    <ion-icon name="logo-instagram"
+                                        class="w-6 min-h-6 mr-5 text-white whitespace-nowrap laptop:w-6 laptop:min-h-6 cursor-pointer"></ion-icon>
+                                    <ion-icon name="logo-twitter"
+                                        class="w-6 min-h-6 gap-5 text-white laptop:w-6 laptop:min-h-6 cursor-pointer"></ion-icon>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </footer>
+        <!-- END! -->
+
+
+        <!-- JavaScript -->
+        <script src="./script.js"></script>
+    </body>
+
+</html>
